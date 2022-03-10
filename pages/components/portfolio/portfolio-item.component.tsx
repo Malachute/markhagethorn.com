@@ -15,7 +15,7 @@ export default function PortfolioItem() {
         <a href="https://www.safe-port.nl/" target="_blank" rel="noreferrer">
           <h2>SafePort</h2>
         </a>
-        <p>A simple one-page WordPress site for consulting services.</p>
+        <p>Wouw</p>
       </div>
     </div>
   );
