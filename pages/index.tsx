@@ -10,101 +10,35 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">Mark Hagethorn&apos;s portfolio</h1>
+        <h1 className="text-3xl font-bold underline">Mark Hagethorn</h1>
 
-        <PortfolioItem></PortfolioItem>
+        <PortfolioItem
+          name="SafePort"
+          href="https://www.safe-port.nl/"
+          description="A simple one-page WordPress site for consulting services."
+          imageName="safe-port.png"
+        ></PortfolioItem>
 
-        <div className="well" id="safeport">
-          <div className="thumbnail">
-            <a
-              href="https://www.safe-port.nl/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="/assets/images/safe-port.png"
-                alt="safeport logo"
-              />
-            </a>
-          </div>
-          <div className="description">
-            <a
-              href="https://www.safe-port.nl/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h2>SafePort</h2>
-            </a>
-            <p>A simple one-page WordPress site for consulting services.</p>
-          </div>
-        </div>
+        <PortfolioItem
+          name="Softpak"
+          href="https://www.softpak.nl/"
+          description="Modernising the existing Progress-based application to browser-based Angular application."
+          imageName="softpak.png"
+        ></PortfolioItem>
 
-        <div className="well" id="softpak">
-          <div
-            className="thumbnail"
-            style={{
-              backgroundColor: "#00457c",
-              borderRadius: "4px",
-              padding: "10px 8px",
-              maxWidth: "188px",
-            }}
-          >
-            <a href="https://www.softpak.nl/" target="_blank" rel="noreferrer">
-              <img
-                src="/assets/images/softpak.png"
-                alt="softpak"
-              />
-            </a>
-          </div>
-          <div className="description">
-            <a href="https://www.softpak.nl/" target="_blank" rel="noreferrer">
-              <h2>Softpak</h2>
-            </a>
-            <p>
-              Modernising the existing Progress-based application to
-              browser-based Angular application.
-            </p>
-          </div>
-        </div>
-
-        <div className="well" id="prointermediair">
-          <div className="thumbnail">
-            <a
-              href="https://pro-intermediair.nl"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="/assets/images/pro-intermediair.png"
-                alt="PRO-Intermediair"
-                
-              />
-            </a>
-          </div>
-          <div className="description">
-            <a
-              href="https://pro-intermediair.nl"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h2>PRO-Intermediair</h2>
-            </a>
-            <p>
-              Firebase Angular application, using the Firestore database for its
+        <PortfolioItem
+          name="PRO-intermediair"
+          href="https://pro-intermediair.nl/"
+          description="Firebase Angular application, using the Firestore database for its
               CMS, created for a recruitment company in the area of Rotterdam in
-              the Netherlands.
-            </p>
-          </div>
-        </div>
+              the Netherlands."
+          imageName="pro-intermediair.png"
+        ></PortfolioItem>
 
         <div className="well" id="clubsjarel">
           <div className="thumbnail">
             <a href="https://clubsjarel.nl" target="_blank" rel="noreferrer">
-              <img
-                src="/assets/images/club-sjarel.png"
-                alt="Club Sjarel"
-                
-              />
+              <img src="/assets/images/club-sjarel.png" alt="Club Sjarel" />
             </a>
           </div>
           <div className="description">
@@ -135,10 +69,7 @@ export default function Home() {
         <div className="well" id="ticketcounter">
           <div className="thumbnail">
             <a href="https://ticketcounter.eu" target="_blank" rel="noreferrer">
-              <img
-                src="/assets/images/ticketcounter.png"
-                alt="ticketcounter"
-              />
+              <img src="/assets/images/ticketcounter.png" alt="ticketcounter" />
             </a>
           </div>
           <div className="description">
@@ -155,11 +86,7 @@ export default function Home() {
         <div className="well" id="vvflits">
           <div className="thumbnail">
             <a href="https://vvflits.nl" target="_blank" rel="noreferrer">
-              <img
-                src="/assets/images/vvflits.png"
-                alt="VV Flits"
-                
-              />
+              <img src="/assets/images/vvflits.png" alt="VV Flits" />
             </a>
           </div>
           <div className="description">
@@ -176,11 +103,7 @@ export default function Home() {
         <div className="well" id="herabouw">
           <div className="thumbnail">
             <a href="https://herabouw.nl" target="_blank" rel="noreferrer">
-              <img
-                src="/assets/images/herabouw.png"
-                alt="Hera Bouw BV"
-                
-              />
+              <img src="/assets/images/herabouw.png" alt="Hera Bouw BV" />
             </a>
           </div>
           <div className="description">
@@ -193,7 +116,7 @@ export default function Home() {
 
         <div className="well" id="tripl">
           <div className="thumbnail">
-            <img src="/assets/images/tripl.png" alt="tripl"  />
+            <img src="/assets/images/tripl.png" alt="tripl" />
           </div>
           <div className="description">
             <h2>Tripl</h2>
@@ -206,7 +129,7 @@ export default function Home() {
 
         <div className="well" id="mashnew">
           <div className="thumbnail">
-            <img src="/assets/images/mashnu.png" alt="Mashnu"  />
+            <img src="/assets/images/mashnu.png" alt="Mashnu" />
           </div>
           <div className="description">
             <h2>Mash</h2>
@@ -220,11 +143,7 @@ export default function Home() {
 
         <div className="well" id="easymarketing">
           <div className="thumbnail">
-            <img
-              src="/assets/images/easymarketing.png"
-              alt="easymarketing"
-              
-            />
+            <img src="/assets/images/easymarketing.png" alt="easymarketing" />
           </div>
           <div className="description">
             <h2>EasyMarketing</h2>
@@ -238,11 +157,7 @@ export default function Home() {
 
         <div className="well" id="jobspot">
           <div className="thumbnail">
-            <img
-              src="/assets/images/jobspot-large.jpg"
-              alt="jobspot"
-              
-            />
+            <img src="/assets/images/jobspot-large.jpg" alt="jobspot" />
           </div>
           <div className="description">
             <h2>JobSpot</h2>
@@ -258,7 +173,6 @@ export default function Home() {
             <img
               src="/assets/images/optiwell-logo.jpg"
               alt="CampinaDeutschland Optiwell"
-              
             />
           </div>
           <div className="description">
@@ -272,11 +186,7 @@ export default function Home() {
 
         <div className="well" id="ordify">
           <div className="thumbnail">
-            <img
-              src="/assets/images/ordify.png"
-              alt="Ordify GmbH"
-              
-            />
+            <img src="/assets/images/ordify.png" alt="Ordify GmbH" />
           </div>
           <div className="description">
             <h2>Ordify</h2>
@@ -290,11 +200,7 @@ export default function Home() {
         <div className="well" id="bailine">
           <div className="thumbnail">
             <a href="https://bailine.nl" target="_blank" rel="noreferrer">
-              <img
-                src="/assets/images/bailine.png"
-                alt="Bailine Barendrecht"
-                
-              />
+              <img src="/assets/images/bailine.png" alt="Bailine Barendrecht" />
             </a>
           </div>
           <div className="description">
@@ -307,11 +213,7 @@ export default function Home() {
 
         <div className="well" id="duoblogger">
           <div className="thumbnail">
-            <img
-              src="/assets/images/duoblogger.png"
-              alt="DuoBlogger"
-              
-            />
+            <img src="/assets/images/duoblogger.png" alt="DuoBlogger" />
           </div>
           <div className="description">
             <h2>DuoBlogger</h2>
@@ -324,11 +226,7 @@ export default function Home() {
 
         <div className="well" id="autoblogsense">
           <div className="thumbnail">
-            <img
-              src="/assets/images/autoblogsense.jpg"
-              alt="Autoblog Sense"
-              
-            />
+            <img src="/assets/images/autoblogsense.jpg" alt="Autoblog Sense" />
           </div>
           <div className="description">
             <h2>AutoBlog Sense</h2>
@@ -341,11 +239,7 @@ export default function Home() {
 
         <div className="well" id="consulting">
           <div className="thumbnail">
-            <img
-              src="/assets/images/consulting.png"
-              alt="AdSense Consulting"
-              
-            />
+            <img src="/assets/images/consulting.png" alt="AdSense Consulting" />
           </div>
           <div className="description">
             <h2>AdSense Consulting</h2>
@@ -360,23 +254,6 @@ export default function Home() {
       </main>
 
       <footer></footer>
-
-      <style jsx>{``}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </div>
   );
 }
