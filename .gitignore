@@ -19,6 +19,7 @@
 .DS_Store
 firebase.env
 .firebase/
+.vscode
 
 # debug
 npm-debug.log*

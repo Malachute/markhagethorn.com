@@ -1,9 +1,0 @@
-.portfolio-item {
-  display: block;
-}
-
-.portfolio-item__image img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
