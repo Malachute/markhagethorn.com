@@ -18,12 +18,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MARK_HAGETHORN }}'
           channelId: live
           projectId: mark-hagethorn
-    # https://nextjs.org/docs/messages/no-cache
-    uses: actions/cache@v2
-    with:
-      path: |
-        ~/.npm
-        ${{ github.workspace }}/.next/cache
-      key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-      restore-keys: |
-        ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
