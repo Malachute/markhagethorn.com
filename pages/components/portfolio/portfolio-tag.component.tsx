@@ -7,39 +7,41 @@ function PortfolioTag(props: PortfolioTagContent) {
   const tagImage = (tag: PortfolioTags) => {
     switch (tag) {
       case PortfolioTags.ANGULAR:
-        return "/assets/icons/angular.svg"
+        return "/assets/icons/angular.svg";
       case PortfolioTags.ANGULARJS:
-        return "/assets/icons/angularjs.svg"
+        return "/assets/icons/angularjs.svg";
       case PortfolioTags.REACTJS:
-        return "/assets/icons/reactjs.svg"
+        return "/assets/icons/reactjs.svg";
       case PortfolioTags.NEXTJS:
-        return "/assets/icons/nextjs.svg"
+        return "/assets/icons/nextjs.svg";
       case PortfolioTags.PHP:
-        return "/assets/icons/php.svg"
+        return "/assets/icons/php.svg";
       case PortfolioTags.WORDPRESS:
-        return "/assets/icons/wordpress.svg"
+        return "/assets/icons/wordpress.svg";
       case PortfolioTags.UBUNTU:
-        return "/assets/icons/ubuntu.svg"
+        return "/assets/icons/ubuntu.svg";
       case PortfolioTags.FIREBASE:
-        return "/assets/icons/firebase.svg"
+        return "/assets/icons/firebase.svg";
       case PortfolioTags.NOSQL:
-        return "/assets/icons/nosql.svg"
+        return "/assets/icons/nosql.svg";
       case PortfolioTags.RUBYONRAILS:
-        return "/assets/icons/rubyonrails.svg"
+        return "/assets/icons/rubyonrails.svg";
       case PortfolioTags.IONIC:
-        return "/assets/icons/ionic.svg"
+        return "/assets/icons/ionic.svg";
       case PortfolioTags.CORDOVA:
-        return "/assets/icons/cordova.svg"
+        return "/assets/icons/cordova.svg";
       case PortfolioTags.PUBLISHING:
-        return "/assets/icons/book.svg"
+        return "/assets/icons/book.svg";
       case PortfolioTags.ADSENSE:
-        return "/assets/icons/google.svg"
+        return "/assets/icons/google.svg";
       case PortfolioTags.MAGENTO:
-        return "/assets/icons/magento.svg"
+        return "/assets/icons/magento.svg";
       case PortfolioTags.CICD:
-        return "/assets/icons/cicd.svg"
+        return "/assets/icons/cicd.svg";
       case PortfolioTags.TAILWINDCSS:
-        return "/assets/icons/tailwind.svg"
+        return "/assets/icons/tailwind.svg";
+      case PortfolioTags.STENCILJS:
+        return "/assets/icons/stenciljs.svg";
 
       default:
         return null;

@@ -36,17 +36,32 @@ export default function Home() {
         <div>
           <a
             href="mailto:mhagethorn@me.com"
-            className="flex text-blue-500 mt-2 mr-2 no-underline hover:underline"
+            className="flex items-center text-blue-500 mt-2 mr-2 no-underline hover:underline"
           >
             <i className="mr-2">
               <img
                 src="/assets/images/email.svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 alt="email"
               />
             </i>
             Contact me via email
+          </a>
+          <a
+            href="/assets/docs/mark-hagethorn-cv.pdf"
+            className="flex items-center text-blue-500 mt-2 mr-2 no-underline hover:underline"
+            target="_blank"
+          >
+            <i className="mr-2">
+              <img
+                src="/assets/images/cv.svg"
+                width="20"
+                height="20"
+                alt="email"
+              />
+            </i>
+            Download CV (PDF)
           </a>
         </div>
       </header>

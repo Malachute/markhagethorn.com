@@ -16,4 +16,5 @@ export enum PortfolioTags {
   "MAGENTO" = "Magento (1.0)",
   "CICD" = "CI / CD",
   "TAILWINDCSS" = "Tailwind CSS",
+  "STENCILJS" = "StencilJS",
 }

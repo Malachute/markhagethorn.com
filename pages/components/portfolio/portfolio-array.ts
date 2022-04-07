@@ -18,6 +18,7 @@ export const PortfolioArray = [
       PortfolioTags.ANGULAR,
       PortfolioTags.TAILWINDCSS,
       PortfolioTags.IONIC,
+      PortfolioTags.STENCILJS,
       PortfolioTags.FIREBASE,
       PortfolioTags.UBUNTU,
       PortfolioTags.CICD,
