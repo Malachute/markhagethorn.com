@@ -9,6 +9,7 @@ export default function Home() {
       <PortfolioItem
         key={index}
         name={item.name}
+        date={item.date}
         description={item.description}
         href={item.href}
         imageName={item.imageName}
@@ -32,7 +33,7 @@ export default function Home() {
             associated with it:
           </p>
         </div>
-        <div className="flex content-center justify-center">
+        <div>
           <a
             href="mailto:mhagethorn@me.com"
             className="flex text-blue-500 mt-2 mr-2 no-underline hover:underline"
@@ -74,7 +75,7 @@ export default function Home() {
             FireBase.
             <br />
             <span className="italic text-gray-400">
-              Last updated 22/04/2022
+              Last updated 07/04/2022
             </span>
           </p>
         </div>
