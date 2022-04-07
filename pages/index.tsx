@@ -1,6 +1,6 @@
 import Head from "next/head";
-import PortfolioItem from "./components/portfolio/portfolio-item.component";
-import { PortfolioArray } from "./components/portfolio/portfolio-array";
+import PortfolioItem from "../components/portfolio/portfolio-item.component";
+import { PortfolioArray } from "../components/portfolio/portfolio-array";
 
 export default function Home() {
 
