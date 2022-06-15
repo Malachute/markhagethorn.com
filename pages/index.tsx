@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div>
           <a
-            href="mailto:mhagethorn@me.com"
+            href="mailto:mark@hagethorn.eu"
             className="flex items-center text-blue-500 mt-2 mr-2 no-underline hover:underline"
           >
             <i className="mr-2">
