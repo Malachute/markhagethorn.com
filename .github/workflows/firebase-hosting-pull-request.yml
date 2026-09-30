@@ -8,21 +8,16 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: npm ci && npm run build
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      # Next 12 does not run on Node 25+ (SlowBuffer was removed), so pin Node 22.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile && pnpm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MARK_HAGETHORN }}'
           projectId: mark-hagethorn
-
-
-# https://nextjs.org/docs/messages/no-cache
-uses: actions/cache@v2
-with:
-  path: |
-    ~/.npm
-    ${{ github.workspace }}/.next/cache
-  key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-  restore-keys: |
-    ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
