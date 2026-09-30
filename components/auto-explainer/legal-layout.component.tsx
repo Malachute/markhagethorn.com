@@ -15,7 +15,11 @@ export default function LegalLayout({ title, children }: Props) {
   return (
     <div className="home">
       <Head>
-        <title>{`${title} · ${APP_NAME} · Mark Hagethorn`}</title>
+        <title>
+          {title === APP_NAME
+            ? `${APP_NAME} · Mark Hagethorn`
+            : `${title} · ${APP_NAME} · Mark Hagethorn`}
+        </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
