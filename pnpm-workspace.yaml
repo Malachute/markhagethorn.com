@@ -1,0 +1,7 @@
+allowBuilds:
+  core-js: false
+  core-js-pure: false
+  fsevents: false
+  mozjpeg: false
+  optipng-bin: false
+  protobufjs: false
