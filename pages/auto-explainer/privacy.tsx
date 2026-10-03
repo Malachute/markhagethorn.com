@@ -106,6 +106,10 @@ export default function Privacy() {
             days, as required by the YouTube API Services Developer Policies.
           </li>
           <li>
+            Video IDs are re-checked with the YouTube Data API at least every 30
+            days, and the IDs of videos that no longer exist are deleted.
+          </li>
+          <li>
             When access is revoked, stored OAuth tokens and YouTube API data
             are deleted within 7 days.
           </li>
