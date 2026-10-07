@@ -50,7 +50,7 @@ export default function Privacy() {
             YouTube Data API on the owner&apos;s behalf.
           </li>
           <li>
-            <strong>Channel ID and name</strong>, used to check that uploads go
+            <strong>Channel ID</strong>, used to check that uploads go
             to the intended channel.
           </li>
           <li>
@@ -83,7 +83,8 @@ export default function Privacy() {
         </p>
         <p>
           Status notifications, which can include a video&apos;s title and
-          link, are sent only to the owner&apos;s private Telegram chat.
+          link and the channel ID, are sent only to the owner&apos;s private
+          Telegram chat.
           Services the tool uses to create videos (for example text and speech
           generation) receive the video&apos;s subject, script and narration
           text, but no YouTube API data or Google account data.
@@ -105,8 +106,21 @@ export default function Privacy() {
             days, as required by the YouTube API Services Developer Policies.
           </li>
           <li>
+            Video IDs are re-checked with the YouTube Data API at least every 30
+            days, and the IDs of videos that no longer exist are deleted.
+          </li>
+          <li>
             When access is revoked, stored OAuth tokens and YouTube API data
             are deleted within 7 days.
+          </li>
+          <li>
+            To delete the stored data, the owner sends /revoke to the bot (or
+            runs pnpm ae revoke-youtube): the token is revoked with Google, and
+            the token and the stored YouTube API data are deleted at once
+            (database backups within 7 days). Deleting the data stored by{" "}
+            {APP_NAME} does not affect any data stored by YouTube; to delete
+            videos or other data on YouTube, use YouTube Studio or another
+            YouTube application.
           </li>
           <li>
             To request deletion or ask a question about your data, email{" "}
