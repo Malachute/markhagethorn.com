@@ -117,7 +117,7 @@ export default function Privacy() {
             To delete the stored data, the owner sends /revoke to the bot (or
             runs pnpm ae revoke-youtube): the token is revoked with Google, and
             the token and the stored YouTube API data are deleted at once
-            (database backups within 7 days). Deleting the data stored by{" "}
+            (database backups included). Deleting the data stored by{" "}
             {APP_NAME} does not affect any data stored by YouTube; to delete
             videos or other data on YouTube, use YouTube Studio or another
             YouTube application.
