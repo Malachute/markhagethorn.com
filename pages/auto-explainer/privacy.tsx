@@ -56,7 +56,8 @@ export default function Privacy() {
           <li>
             <strong>Video IDs, metadata and status</strong> of videos the tool
             itself uploaded (title, description, tags, privacy status,
-            scheduled publish time, processing and upload status), used to
+            scheduled publish time, processing and upload status, and the
+            messages the API returns about them), used to
             finish publishing, add thumbnails and captions, and report progress
             to the owner.
           </li>
