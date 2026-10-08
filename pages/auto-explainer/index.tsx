@@ -43,8 +43,8 @@ export default function AutoExplainer() {
           </li>
           <li>
             Once a day the tool also picks one obscure, non-sensitive question
-            itself and makes a 5-minute video about it; I can skip or swap it,
-            or turn the feature off.
+            itself and makes a 5-minute video about it; I can stop it in
+            Telegram (/cancel) or turn the feature off.
           </li>
           <li>
             Until the YouTube API audit passes, a daily check keeps at most one
