@@ -24,3 +24,7 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MARK_HAGETHORN }}'
           channelId: live
           projectId: mark-hagethorn
+          # firebase-tools 15.34 checks serviceusage.googleapis.com, which the deploy service account may not call
+          # (403 since 2026-10-27); 15.33.0 is the last version that deployed. Unpin once the account has the
+          # Service Usage Consumer role.
+          firebaseToolsVersion: 15.33.0
