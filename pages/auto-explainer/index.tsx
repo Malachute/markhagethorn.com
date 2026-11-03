@@ -37,10 +37,10 @@ export default function AutoExplainer() {
             It uploads each video to my channel as private and makes it public
             as soon as the upload is done: at most 2 videos go public per day
             and 14 per week, and a video over that limit waits for the next
-            free slot. When a video is ready I get a Telegram card with the
-            preview, title and description, and until it is public I can make
-            it unlisted, keep it private, edit the title or description, or
-            cancel.
+            free slot. When a video is ready I get one Telegram message with
+            its title (the link is added once it is on YouTube), and until it
+            is public I can make it unlisted, keep it private, edit the title
+            or description, or cancel.
           </li>
           <li>
             Once a day the tool also picks one obscure, non-sensitive question
